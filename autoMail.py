@@ -15,7 +15,7 @@ from email.MIMEBase import MIMEBase
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
  
-#Gmailアカウント
+#Gmailアカウント ここに文字が追加されるはず
 ADDRESS = "アカウント名を入力"
 PASSWARD = "パスワードを入力"
  
