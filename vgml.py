@@ -18,10 +18,10 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 
-# メールアカウント
-MAIL_ADDRESS = "メールアドレス"
-MAIL_PASSWARD = "パスワード"
-TO_MAIL_ADDRESS = "宛先メールアドレス"
+# メールアカウント 
+MAIL_ADDRESS = "自身のメールアドレスを入力"
+MAIL_PASSWARD = "パスワードを入力"
+TO_MAIL_ADDRESS = "宛先メールアドレスを入力"
 
 # SMTPサーバ設定
 SMTP_SERVER = "smtp.gmail.com"
@@ -133,8 +133,8 @@ if __name__ == "__main__":
                     # XMLをパースして、解析結果を取得する
                     score, word = parse_recogout(xml_data)
 
-                    if u'パパ' in word:
-                        # パパと呼ばれたら写真を撮る
+                    if u'ここにキーワードを入力する' in word:
+                        # キーワードが呼ばれたら写真を撮る
                         file_name, file_path = take_picuture(picture_dir)
 
                         # 添付ファイルの情報を作成
